@@ -1,0 +1,27 @@
+[
+    {
+      "name": "University of California, Irvine",
+      "location": "Irvine, CA",
+      "GPA_requirements": "3.0 minimum",
+      "transfer_requirements": ["Calc 1 with B", "Physics 1 with C", "English Composition"],
+      "programs_offered": ["Computer Science", "Electrical Engineering", "Mathematics"],
+      "application_deadlines": {
+        "fall": "March 1",
+        "winter": "September 1"
+      },
+      "website": "https://www.uci.edu"
+    },
+    {
+      "name": "California State University, Long Beach",
+      "location": "Long Beach, CA",
+      "GPA_requirements": "2.7 minimum",
+      "transfer_requirements": ["Calculus 1 with C", "General Biology", "English Writing"],
+      "programs_offered": ["Computer Science", "Mechanical Engineering", "Physics"],
+      "application_deadlines": {
+        "fall": "April 1",
+        "winter": "October 1"
+      },
+      "website": "https://www.csulb.edu"
+    }
+  ]
+  
