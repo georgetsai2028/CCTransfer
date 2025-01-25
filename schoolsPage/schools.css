@@ -2,3 +2,8 @@
     font-family: 'Inter';
     src: url(../InterVariable.ttf);
 }
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
