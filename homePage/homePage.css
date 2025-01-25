@@ -31,3 +31,7 @@ html, body {
 .navContainer {
     display: flex;
 }
+
+.hero{
+    text-align: center;
+}
