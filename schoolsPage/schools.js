@@ -1,4 +1,5 @@
-fetch('schoolsPage/schools.json')
+
+fetch('schools.json')
     .then(response => response.json())
     .then(data => {
         //creates elements for ids from html
@@ -6,43 +7,54 @@ fetch('schoolsPage/schools.json')
     const majorSelect = document.getElementById('majorSelect');
     const requirements = document.getElementById('requirements');
 
+
+    //clear school dropdown
+    schoolSelect.innerHTML = '<option value="">Select a School</option>';
     //populate major dropdown based on the selected school
+    data.forEach(school => {
+        const option = document.createElement('option');
+        option.value = school.name;
+        option.textContent = school.name;
+        schoolSelect.appendChild(option);
+    });
+
+    // Populate major dropdown based on selected school
     schoolSelect.addEventListener('change', () => {
         const selectedSchool = schoolSelect.value;
-        const school = data.find(s => s.name.toLowerCase().includes(selectedSchool.toLowerCase()));
+        const school = data.find(s => s.name === selectedSchool);
 
-        //clear previous major options
-        majorSelect.innerHTML = '<option value =">Select a Major</option>';
+        // Clear previous major options
+        majorSelect.innerHTML = '<option value="">Select a Major</option>';
 
-        if (school)
-        //populates major dropdown based on selected school
-        {
-            schools.major.forEach(major => {
+        requirements.innerHTML = '';
+
+        if (school) {
+            // Populate major options from majors array
+            school.majors.forEach(major => {
                 const option = document.createElement('option');
-                option.value = major.major;
-                option.textContent = major.major;
+                option.value = major;
+                option.textContent = major;
                 majorSelect.appendChild(option);
-                
             });
         }
     });
+
+    // Display transfer requirements based on selected major
     majorSelect.addEventListener('change', () => {
         const selectedMajor = majorSelect.value;
         const selectedSchool = schoolSelect.value;
-        const school = data.find(s => s.name.toLowerCase().includes(selectedSchool.toLowerCase()));
-        const major = school?.majors.find(m => m.major === selectedMajor);
+        const school = data.find(s => s.name === selectedSchool);
 
-
-        if (major) {
-            // Display transfer requirements
+        if (school && selectedMajor) {
+            // Display transfer requirements for the selected major
             requirements.innerHTML = `
-            <h3>Transfer Requirements for ${selectedMajor}</h3>
-            <p><strong>GPA Requirement:</strong> ${major.gpa_requirement}</p>
-            <ul>
-                ${major.transfer_requirements.map(req => `<li>${req}</li>`).join('')}
-            </ul>
+                <h3>Transfer Requirements for ${selectedMajor}</h3>
+                <p><strong>GPA Requirement:</strong> ${school.GPA_requirements}</p>
+                <ul>
+                    ${school.transfer_requirements.map(req => `<li>${req}</li>`).join('')}
+                </ul>
             `;
         }
-    })
-    })
-    .catch(error => console.error('Error:', error));
+    });
+})
+.catch(error => console.error('Error:', error));
