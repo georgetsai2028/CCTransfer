@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+}
+.homeHeader{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navBar{
+    list-style: none;
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navLinks a{
+    text-decoration: none;
+    color: black;
+}
+
+.navContainer {
+    display: flex;
+}
