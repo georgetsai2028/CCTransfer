@@ -66,6 +66,16 @@ main {
     text-align: center;
 }
 
+.hero button{
+    font-family: 'Inter';
+    height: 40px;
+    width: 180px;
+}
+
+.hero button:hover {
+    background-color: #CC66FF;
+}
+
 .keyFeatures a:hover {
     color:darkred;
 }
