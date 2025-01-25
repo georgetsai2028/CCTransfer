@@ -8,6 +8,15 @@ html, body {
     font-family: 'Inter';
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .homeHeader{
     display: flex;
     justify-content: space-around;
@@ -36,7 +45,24 @@ html, body {
     text-align: center;
 }
 
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    list-style: none;
+}
+
 .social img {
     width: 30px;
     height: 30px;
+}
+.social {
+    display: flex;
+    gap: 10px;
+}
+.aboutSection {
+    font-family: 'Inter';
+    list-style: none;
+    display: flex;
+    gap: 10px;
 }
