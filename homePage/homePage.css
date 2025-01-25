@@ -1,12 +1,13 @@
-html, body {
-    height: 100%;
-    font-family: 'Inconsolata';
+@font-face {
+    font-family: 'Inter';
+    src: url(../InterVariable.ttf);
 }
 
-@font-face {
-    font-family: 'Inconsolata';
-    src: url('./Inconsolata/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype');
+html, body {
+    height: 100%;
+    font-family: 'Inter';
 }
+
 .homeHeader{
     display: flex;
     justify-content: space-around;
