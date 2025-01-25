@@ -22,31 +22,46 @@ a {
 .homeHeader{
     display: flex;
     justify-content: space-around;
+    background-color: #7733FF;
 }
 
-.navBar{
-    list-style: none;
+.navBar {
+    background-color: #8066FF;
+    padding: 10px 0;
+    overflow: hidden;
+    border-bottom: 4px black;
 }
 
 .navLinks{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    background-color: #8066FF;
+    margin: 0;
+    padding: 0;
 }
+
+.navLinks li{
+    margin: 0;
+    padding: 0;
+}
+
 
 .navLinks a{
     text-decoration: none;
     color: black;
+    display: inline-block;
 }
 
 .navLinks a:hover{
-    color: lightcoral;
+    color: #CC66FF;
 }
 
-.navContainer {
-    display: flex;
-}
 
+main {
+    padding: 1px;
+    background-color: #DDCCFF;
+}
 .hero{
     text-align: center;
 }
@@ -79,5 +94,5 @@ footer{
 }
 
 .aboutSection a:hover {
-    color:lightcoral;
+    color:#CC66FF;
 }
