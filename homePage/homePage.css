@@ -35,3 +35,8 @@ html, body {
 .hero{
     text-align: center;
 }
+
+.social img {
+    width: 30px;
+    height: 30px;
+}
