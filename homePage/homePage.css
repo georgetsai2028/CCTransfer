@@ -5,6 +5,8 @@
 
 html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
     font-family: 'Inter';
 }
 
@@ -37,6 +39,10 @@ a {
     color: black;
 }
 
+.navLinks a:hover{
+    color: lightcoral;
+}
+
 .navContainer {
     display: flex;
 }
@@ -45,11 +51,16 @@ a {
     text-align: center;
 }
 
+.keyFeatures a:hover {
+    color:darkred;
+}
+
 footer{
     display: flex;
     justify-content: space-between;
     padding: 20px;
     list-style: none;
+    background-color: lightgray;
 }
 
 .social img {
@@ -65,4 +76,8 @@ footer{
     list-style: none;
     display: flex;
     gap: 10px;
+}
+
+.aboutSection a:hover {
+    color:lightcoral;
 }
