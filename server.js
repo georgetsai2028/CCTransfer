@@ -9,8 +9,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 //route for homepage
-app.get('/', (req, res) => {
-    res.render('homePage.ejs')
+app.get('/homePage', (req, res) => {
+    res.render('/homePage/homePage.ejs')
 })
 
 //route for schools page
