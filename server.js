@@ -14,8 +14,8 @@ app.get('/homePage', (req, res) => {
 })
 
 //route for schools page
-app.get('/schools', (req, res) => {
-    res.render('schools/schools')
+app.get('/schoolsPage', (req, res) => {
+    res.render('schoolsPage/schools')
 })
 
 app.listen(3000);
