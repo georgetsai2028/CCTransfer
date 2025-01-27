@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schools</title>
-    <link rel = "stylesheet" href = "schools.css">
+    <link rel = "stylesheet" href = "/css/schools.css">
     
 </head>
 <body>
     <h1>Select a School and Major</h1>
 
-    <label for ="schoolSelect">Choose a school:</label>
-    <select id = "schoolSelect">
-        <option value = "uci">University of California, Irvine</option>
-        <option value = "csulb">California State University, Long Beach</option>
-        <option value = "cpp"> California Polytechnic University, Pomona</option>
+    <h1>Select a School and Major</h1>
+
+    <!-- Dropdown for school selection-->
+    <label for="schoolSelect">Choose a school:</label>
+    <select id="schoolSelect">
+        <option value="">Select a School</option>
+        <% schools.forEach(school => { %>
+            <option value="<%= school.name %>"><%= school.name %></option>
+        <% }); %>
     </select>
-    <label for ="majorSelect">Choose a major:</label>
-    <select id = "majorSelect">
-        <option value = "compSci">Computer Science</option>
-        <option value = "EE">Electrical Engineering</option>
+
+    <!-- Dropdown for major selection-->
+    <label for="majorSelect">Choose a major:</label>
+    <select id="majorSelect">
+        <option value="">Select a Major</option>
     </select>
     
     <div id = "requirements"></div>

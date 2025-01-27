@@ -1,5 +1,5 @@
 
-fetch('schools.json')
+fetch('public/json/schools.json')
     .then(response => response.json())
     .then(data => {
         //creates elements for ids from html
