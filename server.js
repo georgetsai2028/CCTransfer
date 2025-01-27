@@ -10,12 +10,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //route for homepage
 app.get('/homePage', (req, res) => {
-    res.render('/homePage/homePage.ejs')
+    res.render('homePage/homePage')
 })
 
 //route for schools page
 app.get('/schools', (req, res) => {
-    res.render('schools')
+    res.render('schools/schools')
 })
 
 app.listen(3000);
