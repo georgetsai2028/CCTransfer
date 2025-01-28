@@ -9,17 +9,18 @@
 <body>
     <%- include("../partials/header") %>    
     <div class="mainContainer">
-    <form>
+    <form action = "/login" method="POST">
         <label for = "emailInput"> Email: </label>
-        <input type = "email" placeholder="Enter your email here" required>
+        <input type = "email" id = "email" name = "email" placeholder="Enter your email here" required>
         <label for = "passwordInput"> Password: </label>
-        <input type = "password" placeholder = "Enter your password here" required>
+        <input type = "password" id = "email" name = "email" placeholder = "Enter your password here" required>
+    
+        <div class="buttonHolder">
+            <button type = "submit">Login</button>
+            <button class = "signUpButton" type="button" onclick="window.location.href='/register'"> Sign Up Here</button>
+        </div>
     </form>
     </div>
-        <div class="buttonHolder">
-            <button class = "loginButton"> Login </button>
-            <button class = "signUpButton"> Sign Up</button>
-        </div>
 
         <script src = "/js/loginPage.js" defer> </script>
 </body>
