@@ -24,7 +24,6 @@ app.get('/schoolsPage', (req, res) => {
         }
 
         const schoolData = JSON.parse(data);
-        console.log(schoolData)
         res.render('schoolsPage/schools', {schools: schoolData});
     });
     
