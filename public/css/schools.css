@@ -23,7 +23,9 @@ select{
     border: 2px solid #CC66FF;
     border-radius: 8px;
     outline: none;
-    cursor: pointer;
-    appearance: none;
-    background-size: 1em;
+    cursor: pointer
+
+}
+select:hover{
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }
