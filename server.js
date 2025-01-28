@@ -29,5 +29,10 @@ app.get('/schoolsPage', (req, res) => {
     
 });
 
+//route for login page
+app.get('/loginPage', (req, res) => {
+    res.render('loginPage/loginPage')
+})
+
 
 app.listen(3000);
