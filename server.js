@@ -34,5 +34,10 @@ app.get('/loginPage', (req, res) => {
     res.render('loginPage/loginPage')
 })
 
+//route for register page
+app.get('/register', (req, res) =>{
+    res.render('register/register');
+});
+
 
 app.listen(3000);
