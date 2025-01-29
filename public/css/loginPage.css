@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/InterVariable.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Inter';
+    background-color: #DDCCFF;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+form {
+    font-size: 2rem;
+}
+label{
+    font-size: 2rem;
+}
+button {
+    font-size: 1rem;
+}
