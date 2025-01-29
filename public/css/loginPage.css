@@ -25,4 +25,13 @@ label{
 }
 button {
     font-size: 1rem;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+button:hover{
+    background-color: #CC66FF;
+}
+
+input{
+    padding: 8px;
 }
