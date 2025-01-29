@@ -2,3 +2,30 @@
     font-family: 'Inter';
     src: url('/fonts/InterVariable.ttf') format('truetype');
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #DDCCFF ;
+}
+
+form {
+    font-size: 2rem;
+}
+form:hover{
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+label{
+    font-size: 2rem;
+}
+input {
+    padding: 8px;
+}
+button{
+    border-radius: 8px;
+}
+button:hover{
+    background-color: #CC66FF;
+}
