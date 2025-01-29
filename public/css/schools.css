@@ -13,6 +13,10 @@ body, html {
     display: flex;
     justify-content: center;
 }
+
+.mainContainer{
+    margin-left: 20px;
+}
 label{
     display: inline-block;
     font-size: 18px;
@@ -28,4 +32,7 @@ select{
 }
 select:hover{
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+#requirements{
+    margin-left: 20px;
 }
