@@ -17,3 +17,10 @@ SELECT id,
 FROM users
 ORDER BY id DESC
 LIMIT 3;
+INSERT INTO users (email, username, password_hash)
+VALUES(
+        'whoisthis@gmail.com',
+        'whoisthis',
+        'whoisthis123'
+    );
+CREATE INDEX email_index ON users(email);
