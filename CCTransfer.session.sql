@@ -24,3 +24,5 @@ VALUES(
         'whoisthis123'
     );
 CREATE INDEX email_index ON users(email);
+SELECT *
+FROM users;
