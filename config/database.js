@@ -1,5 +1,7 @@
-const mysql = require('mysql2');
 require('dotenv').config();
+
+const mysql = require('mysql2');
+
 
 const pool = mysql.createPool({
     host: process.env.MYSQL_HOST,
@@ -18,5 +20,6 @@ async function fetchUsers() {
         console.error('Error executing query', error);
     }
 }
+
 
 fetchUsers();
