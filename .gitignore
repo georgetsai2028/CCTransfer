@@ -1,5 +1,5 @@
 #Env Var
-.env
+**/.env
 
 #OS files
 .DS_Store
