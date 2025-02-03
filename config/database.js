@@ -1,13 +1,11 @@
 const mysql = require('mysql2');
+require('dotenv').config();
 
 const pool = mysql.createPool({
     host: process.env.MYSQL_HOST,
     user: process.env.MYSQL_USER,
     password: process.env.MYSQL_PASSWORD,
-    database: process.env.MYSQL_DATABASE,
-    waitForConnections: process.env.MYSQL_WAITFORCONNECTIONS,
-    connectionLimit: process.env.MYSQL_CONNECTIONLIMIT,  
-    queueLimit: process.env.MYSQL_QUEUELIMIT        
+    database: process.env.MYSQL_DATABASE 
 });
 
 module.exports = pool.promise();
@@ -20,6 +18,5 @@ async function fetchUsers() {
         console.error('Error executing query', error);
     }
 }
-
 
 fetchUsers();
