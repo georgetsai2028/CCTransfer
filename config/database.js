@@ -20,6 +20,6 @@ async function fetchUsers() {
         console.error('Error executing query', error);
     }
 }
-hello
+
 
 fetchUsers();

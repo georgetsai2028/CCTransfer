@@ -1,1 +1,10 @@
-database.js
+#Env Var
+.env
+
+#OS files
+.DS_Store
+
+#nodejs
+node_modules/
+package-lock.json
+
