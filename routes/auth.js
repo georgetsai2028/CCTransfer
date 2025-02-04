@@ -6,8 +6,17 @@ const router = express.Router();
 
 //Registration Route
 router.post('/register', async (req, res) => {
-    const { username, email, password } = req.body;
+    const { username, email, password, confirmPassword } = req.body;
     try {
+
+        if (!username || !email || !password || !confirmPassword) {
+            return res.status(400).json({ error: "All fields are required" });
+        }
+
+        if (password !== confirmPassword) {
+            return res.status(400).json({ error: "Passwords do not match" });
+        }
+
         //hashes password before storing
         const hashedPassword = await bcrypt.hash(password, 10);
 
