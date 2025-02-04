@@ -6,7 +6,4 @@
 
 #nodejs
 node_modules/
-package-lock.json
 
-*.json
-package-lock.json
