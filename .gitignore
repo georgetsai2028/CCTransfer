@@ -8,5 +8,5 @@
 node_modules/
 package-lock.json
 
-package.json
+*.json
 package-lock.json
