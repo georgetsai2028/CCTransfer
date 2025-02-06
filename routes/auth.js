@@ -6,7 +6,13 @@ const router = express.Router();
 
 //Registration Route
 router.post('/register', async (req, res) => {
-    const { username, email, password, confirmPassword } = req.body;
+    console.log("Incoming request body:", req.body); // Log req.bod
+
+    const username = req.body.username;
+    const email = req.body.email;
+    const password = req.body.password;
+    const confirmPassword = req.body.confirmPassword;
+        
     try {
         console.log("recieve registration req");
         if (!username || !email || !password || !confirmPassword) {
@@ -14,16 +20,19 @@ router.post('/register', async (req, res) => {
         }
 
         if (password !== confirmPassword) {
+            console.log("passwords dont match");
             return res.status(400).json({ error: "Passwords do not match" });
         }
 
         //hashes password before storing
         const hashedPassword = await bcrypt.hash(password, 10);
+        console.log("password hashed successfully");
 
         //inserts users from form into database
         const sql = 'INSERT INTO users (username, email, password) VALUES (?, ?, ?)';
         const [result] = await pool.query(sql, [username, email, hashedPassword]);
 
+        console.log("user inserted in database with ID: ", result.insertId);
         res.status(201).json({ message: 'User registered successfully', userId: result.insertId});
 
     } catch (error) {
