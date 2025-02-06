@@ -8,7 +8,7 @@ const router = express.Router();
 router.post('/register', async (req, res) => {
     const { username, email, password, confirmPassword } = req.body;
     try {
-
+        console.log("recieve registration req");
         if (!username || !email || !password || !confirmPassword) {
             return res.status(400).json({ error: "All fields are required" });
         }
@@ -27,7 +27,7 @@ router.post('/register', async (req, res) => {
         res.status(201).json({ message: 'User registered successfully', userId: result.insertId});
 
     } catch (error) {
-        console.error('Error registering user: ', error);
+        console.error('Error registering user: Womp ', error);
         res.status(500).json({ error: 'Internal server error' });
     }
 });

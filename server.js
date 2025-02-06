@@ -13,6 +13,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 //serve static files from public folder
 app.use(express.static(path.join(__dirname, 'public')));
+//middleware for catching erros
 
 //body parser middleware to parse form data or JSON body
 app.use(express.json());
