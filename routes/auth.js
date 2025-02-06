@@ -29,7 +29,7 @@ router.post('/register', async (req, res) => {
         console.log("password hashed successfully");
 
         //inserts users from form into database
-        const sql = 'INSERT INTO users (username, email, password) VALUES (?, ?, ?)';
+        const sql = 'INSERT INTO users (username, email, password_hash) VALUES (?, ?, ?)';
         const [result] = await pool.query(sql, [username, email, hashedPassword]);
 
         console.log("user inserted in database with ID: ", result.insertId);
