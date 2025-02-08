@@ -3,14 +3,18 @@
     src: url('/fonts/InterVariable.ttf') format('truetype');
 }
 
-body {
+body, html {
+    display: flex;
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: 'Inter';
     background-color: #DDCCFF;
+    flex-direction: column;
 }
-
+main{
+    flex: 1;
+}
 .mainContainer{
     display: flex;
     justify-content: center;
