@@ -10,16 +10,15 @@ html, body{
     font-family: 'Inter';
 }
 
-hero{
+.hero{
     display: flex;
     background-image: url('../images/grad.svg');
     padding: 40px;
     background-color:#7733FF;
 }
 
-h1 {
+.hero-header {
     color: #CC66FF;
-    box-shadow: black;
     text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
     1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
