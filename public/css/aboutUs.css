@@ -9,3 +9,8 @@ html, body{
     margin: 0;
     font-family: 'Inter';
 }
+
+hero{
+    display: flex;
+    background-image: url('../images/graduation-sillouete.jpg');
+}
