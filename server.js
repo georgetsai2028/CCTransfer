@@ -48,6 +48,11 @@ app.get('/register', (req, res) =>{
     res.render('register/register');
 });
 
+//route for about page
+app.get('/about', (req, res) => {
+    res.render('about/aboutUs');
+});
+
 //moute auth route on /auth path
 app.use('/auth', authRoutes);
 
