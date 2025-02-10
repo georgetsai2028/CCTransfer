@@ -12,5 +12,10 @@ html, body{
 
 hero{
     display: flex;
-    background-image: url('../images/graduation-sillouete.jpg');
+    background-image: url('../images/grad.svg');
+    padding: 40px;
+}
+
+h1 {
+    color: #CC66FF;
 }
