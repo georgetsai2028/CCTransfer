@@ -39,7 +39,6 @@ a {
     background-color: #8066FF;
     margin: 0;
     padding: 0;
-    transition-duration: 300ms;
 }
 
 .navLinks li{
@@ -52,7 +51,7 @@ a {
     text-decoration: none;
     color: black;
     display: inline-block;
-    transition-duration: 300ms;
+    transition-duration: 250ms;
 }
 
 .navLinks a:hover{

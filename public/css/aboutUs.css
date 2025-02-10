@@ -14,9 +14,15 @@ hero{
     display: flex;
     background-image: url('../images/grad.svg');
     padding: 40px;
+    background-color:#7733FF;
 }
 
 h1 {
     color: #CC66FF;
     box-shadow: black;
+}
+
+.subheading{
+    color:#CC66FF;
+    border: 1px solid white;
 }
