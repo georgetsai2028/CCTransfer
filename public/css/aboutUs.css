@@ -16,6 +16,7 @@ html, body{
     background-image: url('../images/grad.svg');
     padding: 40px;
     background-color:#7733FF;
+    flex-direction: column;
 }
 
 .hero-header {
@@ -25,12 +26,26 @@ html, body{
 }
 
 .subheading{
+    
     color:#CC66FF;
-    font-size: 18px;
+    font-size: 26px;
     text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
     1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 
+.ourPurpose {
+    margin-left: 20px;
+}
+
+.story{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-left: 40px;
+}
+.features {
+    margin-left: 20px;
+}
 .cardContainer{
     display: flex;
     justify-content: space-around;
